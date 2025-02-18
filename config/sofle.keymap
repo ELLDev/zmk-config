@@ -74,7 +74,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
-                <&inc_dec_kp C_BRIGHTNESS_MAXIMUM C_BRIGHTNESS_MINIMUM>;
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         raise_layer {
@@ -94,6 +94,10 @@
 &trans  &none  &none   &none   &none   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings =
+                <&inc_dec_kp 0 0>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         adjust_layer {
