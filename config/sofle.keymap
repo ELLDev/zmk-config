@@ -208,6 +208,13 @@
             bindings = <&kp BSLH &kp R &kp UNDER &kp Z &kp N &kp E &kp A &kp R &kp SPACE &kp N4 &kp ENTER>;
             label = "CFG__13";
         };
+
+        cfg_combo: cfg_combo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&quakecfg &quakecfg_2 &quakecfg_3 &quakecfg_4 &cfg5 &cfg6 &cfg7 &cfg8 &cfg9 &cfg10 &cfg11 &cfg12 &cfg__13 &cfg14 &cfg15 &cfg16 &cg17 &cfg18 &cfg19 &cfg20 &cfg21 &cfg22 &cfg23 &cfg24 &cfg25 &cfg26 &cfg27>;
+            label = "CFG_COMBO";
+        };
     };
 
     keymap {
@@ -267,11 +274,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&quakecfg  &quakecfg_2  &quakecfg_3  &quakecfg_4  &cfg5   &cfg6                     &trans  &trans  &trans  &trans  &trans  &trans
-&cfg7      &cfg8        &cfg9        &cfg10       &cfg11  &cfg12                    &none   &trans  &none   &trans  &none   &kp DELETE
-&cfg__13   &cfg14       &cfg15       &cfg16       &cg17   &cfg18                    &none   &none   &none   &none   &none   &none
-&cfg19     &cfg20       &cfg21       &cfg22       &cfg23  &cfg24  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &cfg25       &cfg26       &cfg27  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&quakecfg  &quakecfg_2  &quakecfg_3  &quakecfg_4  &cfg5   &cfg6                         &trans  &trans  &trans  &trans  &trans  &trans
+&cfg7      &cfg8        &cfg9        &cfg10       &cfg11  &cfg12                        &none   &trans  &none   &trans  &none   &kp DELETE
+&cfg__13   &cfg14       &cfg15       &cfg16       &cg17   &cfg18                        &none   &none   &none   &none   &none   &none
+&cfg19     &cfg20       &cfg21       &cfg22       &cfg23  &cfg24      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &cfg25       &cfg26       &cfg27  &cfg_combo  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
