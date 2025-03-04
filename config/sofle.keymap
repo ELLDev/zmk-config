@@ -30,7 +30,7 @@
         quakecfg_2: quakecfg_no_delay {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp BSLH &kp M &kp UNDER &kp F &kp O &kp R &kp W &kp A &kp R &kp D &kp SPACE &kp N0 &kp ENTER &kp BSLH &kp C &kp G &kp UNDER &kp B &kp O &kp B &kp U &kp P &kp SPACE &kp N0 &kp ENTER>;
+            bindings = <&kp BSLH &kp M &kp UNDER &kp F &kp O &kp R &kp W &kp A &kp R &kp D &kp SPACE &kp N0 &kp ENTER>;
             label = "QUAKECFG_NO_DELAY";
         };
 
@@ -124,6 +124,13 @@
             bindings = <&kp BSLH &kp B &kp I &kp N &kp D &kp SPACE &kp M &kp W &kp H &kp E &kp E &kp L &kp D &kp O &kp W &kp N &kp SPACE &kp S &kp A &kp Y &kp SPACE &kp R &kp R &kp R &kp A &kp T &kp ENTER>;
             label = "QUAKERAT";
         };
+
+        cfg28: cfg28 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH &kp C &kp G &kp UNDER &kp A &kp U &kp T &kp O &kp S &kp W &kp I &kp T &kp C &kp H &kp SPACE &kp N0 &kp ENTER>;
+            label = "CFG28";
+        };
     };
 
     keymap {
@@ -185,7 +192,7 @@
             bindings = <
 &quakecfg  &quakecfg_2  &quakecfg_3  &quakecfg_4  &cfg5   &cfg6                     &trans  &trans  &trans  &trans  &trans  &trans
 &cfg7      &cfg8        &cfg23       &cfg27       &cfg11  &cfg25                    &none   &trans  &none   &trans  &none   &kp DELETE
-&cfg20     &quakerat    &quakeogey   &none        &none   &none                     &none   &none   &none   &none   &none   &none
+&cfg20     &cfg28       &quakeogey   &quakerat    &none   &none                     &none   &none   &none   &none   &none   &none
 &none      &none        &none        &none        &none   &none   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &none        &none        &none   &none   &trans    &trans  &trans  &trans  &trans  &trans
             >;
